@@ -1,0 +1,68 @@
+/* ---------- Mobile view (default): one div per row ---------- */
+body {
+    background-color: #dedede;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+div img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+div {
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+    padding: 2px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+}
+
+/* ---------- Tablet view: two divs per row ---------- */
+@media (min-width: 772px) {
+    div {
+        display: inline-block;
+        width: 45%;
+        margin: 5px;
+    }
+
+    div img {
+        max-height: 30vh;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+/* ---------- Large screen view: three divs per row ---------- */
+@media (min-width: 998px) {
+    div {
+        width: 30%;
+    }
+}
